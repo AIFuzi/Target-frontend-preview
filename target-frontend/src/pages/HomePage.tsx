@@ -1,13 +1,12 @@
 import {FC, useState} from 'react';
 import LogoElement from "@/components/Elements/HomePageElements/LogoElement.tsx";
 import Title from "@/components/Elements/HomePageElements/Title.tsx";
-import {Button} from "@/components/ui/button.tsx";
 import GameHomeElement from "@/components/Elements/HomePageElements/GameHomeElement.tsx";
 import ImageInfo from "@/components/Elements/HomePageElements/ImageInfo.tsx";
 import {ScrollArea, ScrollBar} from "@/components/ui/scroll-area.tsx";
 
 const HomePage: FC = () => {
-    const [games, setGames] = useState<GameTestInterface[]>([
+    const [games] = useState<GameTestInterface[]>([
         {
             previewLink: 'https://cdn.pixabay.com/photo/2019/09/23/12/47/airsoft-4498480_1280.jpg',
             gameName: 'Поиск сосиски',
