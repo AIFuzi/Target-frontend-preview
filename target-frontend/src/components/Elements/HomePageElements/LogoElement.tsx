@@ -1,8 +1,11 @@
 import {FC} from 'react';
 import {Button} from "@/components/ui/button.tsx";
 import './style.css';
+import {useNavigate} from "react-router-dom";
 
 const LogoElement: FC = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="w-full h-screen flex flex-col items-center justify-center ">
             <div className="flex flex-col items-center">
@@ -22,7 +25,7 @@ const LogoElement: FC = () => {
                 <p className="text-xl text-muted-foreground">
                     AIRSOFT NATION
                 </p>
-                <Button variant="outline" className="mt-6 text-lg py-8 px-16">РЕГИСТРАЦИЯ</Button>
+                <Button variant="outline" className="mt-6 text-lg py-8 px-16" onClick={() => navigate('/register')}>РЕГИСТРАЦИЯ</Button>
             </div>
         </div>
     );

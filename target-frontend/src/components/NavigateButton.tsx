@@ -9,11 +9,11 @@ interface NavigateButtonProps {
     navigateLink: string;
 }
 
-const NavigateButton: FC<NavigateButtonProps> = ({children, isMenuButton, navigateLink}) => {
+const NavigateButton: FC<NavigateButtonProps> = ({children, isMenuButton, variant, navigateLink}) => {
     const navigate = useNavigate();
 
     return (
-        <Button className={`${isMenuButton && 'w-full flex justify-start'}`} variant="outline"
+        <Button className={`${isMenuButton && 'w-full flex justify-start'}`} variant={variant}
                 onClick={() => navigate(`/${navigateLink}`)}>
             {children}
         </Button>

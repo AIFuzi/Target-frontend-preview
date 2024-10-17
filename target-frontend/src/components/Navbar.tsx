@@ -14,7 +14,7 @@ const Navbar: FC = () => {
                 <div className="container">
                     <div className="flex justify-between">
                         <div>
-                            <Button variant="link">
+                            <Button variant="link" onClick={() => navigate('/')}>
                                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
                                     TARGET
                                 </h4>
@@ -27,6 +27,7 @@ const Navbar: FC = () => {
                                 <li><Button variant="link">Прокат и корпоратив</Button></li>
                                 <li><Button variant="link">Правила МГ</Button></li>
                                 <li><Button variant="link">Контакты</Button></li>
+                                <li><Button variant="link">BUG TRACKER</Button></li>
                             </ul>
                         </div>
                         <div className="hidden lg:flex space-x-2">
@@ -89,6 +90,12 @@ const Navbar: FC = () => {
                                                 <NavigateButton isMenuButton={true} variant="ghost"
                                                                 navigateLink="login">
                                                     Контакты
+                                                </NavigateButton>
+                                            </li>
+                                            <li>
+                                                <NavigateButton isMenuButton={true} variant="ghost"
+                                                                navigateLink="login">
+                                                    BUG TRACKER
                                                 </NavigateButton>
                                             </li>
                                         </ul>
