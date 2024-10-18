@@ -31,7 +31,7 @@ const RegisterPage: FC = () => {
                     <div className="bg-black w-full h-full bg-opacity-50 backdrop-blur-sm"/>
                 </div>
                 <div className="w-full lg:w-1/2 flex flex-col justify-center pr-5 pl-5 lg:pr-20 lg:pl-20">
-                    <h1 className="scroll-m-20 text-2xl font-extrabold text-center tracking-tight lg:text-4xl opacity-85 mt-20 mb-10">
+                    <h1 className="scroll-m-20 text-2xl font-extrabold text-center tracking-tight lg:text-4xl opacity-85 mt-40 mb-10">
                         Регистрация
                     </h1>
                     <div className="border-zinc-900 border-2 p-5 rounded-xl">
